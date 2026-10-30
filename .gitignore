@@ -1,0 +1,43 @@
+# ── Secrets : ne jamais commiter ────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ── Python ──────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# ── Frontend (React / Vite) ─────────────────
+node_modules/
+frontend/dist/
+frontend/coverage/
+*.tsbuildinfo
+npm-debug.log*
+
+# ── Docker / données locales ────────────────
+postgres_data/
+*.sqlite3
+*.db
+
+# ── Évaluation ──────────────────────────────
+eval/results/*.tmp
+
+# ── Éditeurs et système ─────────────────────
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
